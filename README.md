@@ -20,7 +20,6 @@ Getting started with the projects assumes you have:
 If everything (GOPATH, dep, Skaffold, Docker local registry) is set up right, run:
 
 `$ skaffold dev`
-`$ skaffold dev`
 
 This should compile the code, create the docker image and deploy it to the kubernetes cluster.
 
