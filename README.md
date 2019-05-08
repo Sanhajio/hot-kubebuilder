@@ -23,7 +23,7 @@ If everything (GOPATH, dep, Skaffold, Docker local registry) is set up right, ru
 
 This should compile the code, create the docker image and deploy it to the kubernetes cluster.
 
-Go make changes to the code within `pkg/controller/sloop/sloop_controller.go` skaffold would automatically detect the change and build a new image and deploy it to the cluster.
+Making changes to the code within `pkg/controller/sloop/sloop_controller.go` trigger skaffold to automatically detect the change and build a new image and deploy it to the cluster.
 
 skaffold prints containers logs, you can get the logs by running:
 `$ kubectl -n sloops-system logs -f -c manager sloops-controller-manager-0`
