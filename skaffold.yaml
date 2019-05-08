@@ -1,0 +1,8 @@
+apiVersion: skaffold/v1beta9
+kind: Config
+build:
+  artifacts:
+  - image: localhost:5000/sloops-controller
+deploy:
+  kustomize:
+    path: config/default
